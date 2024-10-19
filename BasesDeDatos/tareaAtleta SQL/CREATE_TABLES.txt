@@ -1,0 +1,28 @@
+create table atleta(
+dni varchar(9) PRIMARY KEY,
+nombre varchar(70) NOT NULL,
+tipo varchar(30) check(tipo like "ciclista" or tipo like "corredor"),
+ranking int,
+puesto int
+);
+
+create table competicion(
+id int PRIMARY KEY,
+nombre varchar(70) NOT NULL,
+año year NOT NULL
+);
+
+create table participa(
+dni varchar(9) references atleta(dni),
+id int references competicion(id),
+dorsal int NOT NULL,
+PRIMARY KEY (dni, id)
+);
+
+create table etapa(
+cod int,
+nombre varchar(70) NOT NULL,
+kilometros int NOT NULL,
+id int references competicion(id),
+PRIMARY KEY (cod, id)
+);

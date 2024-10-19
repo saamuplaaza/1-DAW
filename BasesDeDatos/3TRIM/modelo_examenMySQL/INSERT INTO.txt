@@ -1,0 +1,31 @@
+INSERT INTO alojamiento values 
+(1, "Casa Rural", "Córdoba", 100.50),
+(2, "Piso", "Córdoba", 50),
+(3, "Casa Rural", "Córdoba", 105),
+(4, "Piso", "Córdoba", 80),
+(5, "Apartamento", "Cádiz", 50),
+(6, "Piso", "Cádiz", 75),
+(7, "Piso", "Cádiz", 92),
+(8, "Apartamento", "Cádiz", 55),
+(9, "Apartamento", "Málaga", 60),
+(10, "Piso", "Málaga", 85),
+(11, "Casa Rural", "Almería", 102.20),
+(12, "Apartamento", "Almería", 105)
+;
+
+INSERT INTO cliente values
+(345, "Alfredo", "Córdoba", 23, "Estudiante"),
+(50, "Fernando Colomer", "Cádiz", 40, "Funcionario"),
+(40, "Trend Morande", "Córdoba", 45, "Chofer"),
+(3, "Micheloud", "Málaga", 23, "Estudiante"),
+(13, "Maria Jesus Alaba", "Málaga", 85, "Doctor"),
+(38, "George Landon", "Málaga", 80, "Enfermero"),
+(55, "Gerard Depardie", "Sevilla", 37, "Funcionario")
+;
+
+INSERT INTO alquiler values
+(3, 1, "20/08/15", "20/08/15", "SI"),
+(50, 2, "20/08/15", "20/08/19", "NO"),
+(13, 3, "20/08/15", "20/08/19", "SI"),
+(345, 5, "21/01/10", "21/02/10", "NO"),
+(40, 6, "21/02/15", "21/02/19", "SI")

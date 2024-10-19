@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightgrey;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    overflow: auto;
+}
+.sidebar{
+    float: left;
+    background-color: yellow;
+    width: 25%;
+    height: 600px;
+}
+
+.container article{
+    float: left;
+    background-color: red;
+    width: 20%;
+    height: 300px;
+    margin-left: 5%;
+}
+
+.container footer{
+    float: left;
+    background-color: blue;
+    width: 70%;
+    height: 290px;
+    margin-left: 5%;
+    margin-top: 10px;
+}

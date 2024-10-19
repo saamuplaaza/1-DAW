@@ -1,0 +1,50 @@
+[
+    {
+        "id": "001",
+        "diasemana": "Hoy",
+        "fecha" : "9 de Mayo de 2024",
+        "imagen": "lluvia.png",
+        "tmax": "21º",
+        "tmin": "12º"
+    },
+    {
+        "id": "002",
+        "diasemana": "Viernes",
+        "fecha" : "10 de Mayo de 2024",
+        "imagen": "solynubes.png",
+        "tmax": "26º",
+        "tmin": "11º"
+    },
+    {
+        "id": "003",
+        "diasemana": "Sábado",
+        "fecha" : "11 de Mayo de 2024",
+        "imagen": "solynubes.png",
+        "tmax": "28º",
+        "tmin": "14º"
+    },
+    {
+        "id": "004",
+        "diasemana": "Domingo",
+        "fecha" : "12 de Mayo de 2024",
+        "imagen": "sol.png",
+        "tmax": "31º",
+        "tmin": "14º"
+    },
+    {
+        "id": "005",
+        "diasemana": "Lunes",
+        "fecha" : "13 de Mayo de 2024",
+        "imagen": "tormenta.png",
+        "tmax": "20º",
+        "tmin": "13º"
+    },
+    {
+        "id": "006",
+        "diasemana": "Martes",
+        "fecha" : "14 de Mayo de 2024",
+        "imagen": "lluvia.png",
+        "tmax": "18º",
+        "tmin": "10º"
+    }
+]

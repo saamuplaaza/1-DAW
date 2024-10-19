@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body,button {
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+h1 {
+  margin-bottom: 2px;
+}
+.candidato {
+  border: 1px solid black;
+  padding-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+img {
+width: 100%;
+}
+.menu {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.cajaVotacion {
+  background-color: #303030;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.votacion {
+  color: white;
+  font-size: 1.8em;
+  margin: 4px 0 7px;
+  font-weight: bold;
+}
+
+.rojo {
+  color: red;
+}

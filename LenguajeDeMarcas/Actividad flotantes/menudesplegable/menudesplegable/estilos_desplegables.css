@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.desplegable{
+    padding: 10px;
+    width: 15%;
+    color: white;
+    background-color: dodgerblue;
+    display: inline-block; /*Permite que enlaces y enlaces2 se pongan en fila*/
+    position: relative; /*Para que esté en relación con el elemento anterior*/
+}
+
+.desplegable-content{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0px 10px 10px 0px black;
+}
+
+.desplegable-content a{
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.desplegable:hover .desplegable-content{
+    display: block;
+    color: white;
+    background-color: gold;
+}
+
+.desplegable-content a:hover{
+    color: white;
+    background-color: dodgerblue;
+}

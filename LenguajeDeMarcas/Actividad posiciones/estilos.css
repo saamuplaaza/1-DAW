@@ -1,0 +1,74 @@
+.sticky{
+    background-color: blueviolet;
+    top: 0px;
+    margin: auto;
+    position: sticky;
+    z-index: 6;
+}
+
+.menu{
+    padding: 20px;
+    width: 100px;
+    margin: auto;
+    display: inline-block;
+    z-index: 6;
+}
+
+.fixed{
+    background-color: teal;
+    height: 120px;
+    width: 100%;
+    top: 300px;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.static{
+    background-color: olive;
+    height: 150px;
+    width: 80%;
+    margin:20px auto;
+    position: static;
+    z-index: 2;
+}
+
+.relative{
+    background-color: lightblue;
+    height: 200px;
+    width: 60%;
+    bottom: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.relative div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+.hijo1{
+    background-color: red;
+    left: 100px;
+    top: 50px;
+    z-index: 5;
+}
+
+.hijo2{
+    background-color: chartreuse;
+    left: 120px;
+    top: 30px;
+    z-index: 4;
+}
+
+.absolute{
+    background-color: gold;
+    height: 500px;
+    width: 200px;
+    left: 300px;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+}

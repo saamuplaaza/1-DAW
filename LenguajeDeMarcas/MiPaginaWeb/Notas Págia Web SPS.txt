@@ -1,0 +1,13 @@
+Notas Págia Web SPS
+En ambas páginas, el menú sale desplegado para ordenador y se pliega para tablet y móvil.
+Diseño responsive en 992px y 576px.
+De los dosvídeos de arriba, se quita uno (el de YouTube) al mirarlo en modo móvil (<576px).
+Los eventos importantes se ponen en bloque al mirarlo en modo móvil (<576px).
+Para móvil sale una flecha abajo a la derecha que te envía arriba de la página. Para tablet y ordenador desaparece.
+La página secundaria es la de deportes.
+Las noticias para móvil se ponen en bloque.
+Para ordenador aparece un vídeo arriba del todo. Para móvil y tablet desaparece.
+Para ordenador y tablet aparece una flecha abajo a la derecha que te envía arriba de la página. Para móvil desaparece.
+En el pie de página de la página ssecundaria hay un botón que te lleva a la página de inicio.
+
+Creo que no falta nada más.

@@ -1,0 +1,16 @@
+nuMat INT PRIMARY KEY,
+nomAlu varchar(20),
+dirAlu varchar(30),
+edad INT,
+CurAlu varchar(2) REFERENCES curso (codCur)
+);
+(
+codCur varchar(2),
+nuMatDel INT REFERENCES alumnos (NuMat),
+etapa varchar(20)
+),
+(
+signatura INT PRIMARY KEY REFERENCES libro (signatura),
+nuMat INT PRIMARY KEY REFERENCES alumno (nuMat),
+fechaPres DATE
+)

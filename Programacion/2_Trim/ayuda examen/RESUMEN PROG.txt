@@ -1,0 +1,17 @@
+RESUMEN PROG.
+- Librerías proyecto.
+- Uso SQLite.
+- Expresiones regulares.
+- Clases:
+	·Atributos.
+	·Métodos.
+- Herencia.
+- Métodos de clase más usados.
+- Programación modular.
+
+
+PRÁCTICAS
+- Tratamiento de datos.
+- POO Ruleta.
+- Herencia.
+- Programación modular (P1/P2).

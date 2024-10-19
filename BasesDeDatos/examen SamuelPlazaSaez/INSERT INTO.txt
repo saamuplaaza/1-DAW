@@ -1,0 +1,28 @@
+INSERT INTO cliente values
+(1, "Samuel", "C/Córdoba", "2021-01-10"),
+(2, "Pedro", "C/Sevilla", "2020-01-10"),
+(3, "Rosa", "C/Cádiz", "2021-01-10"),
+(4, "Marta", "C/Málaga", "2021-01-10"),
+(5, "Manolo", "C/Huelva", "2022-01-10")
+;
+
+INSERT INTO animal values
+(1, "Rufus", "Perro", "Mastin Español", 2, 1),
+(2, "Mori", "Perro", "Ratonero", 3, 1),
+(3, "Mogli", "Gato", "Siames", 1, 2),
+(4, "Piti", "Pájaro", "Ninfa", 1, 3)
+;
+
+iNSERT INTO tratamiento values
+(1, "Estética", "Pelado", 5),
+(2, "Estética", "Lavado", 10.50),
+(3, "Estética", "Uñas", 4),
+(4, "Revisión", "Completo", 25)
+;
+
+INSERT INTO visita values 
+(1, 1, "2022-04-29", "SI"),
+(1, 2, "2022-04-29", "SI"),
+(2, 4, "2022-04-29", "NO"),
+(3, 4, "2022-04-28", "NO")
+;

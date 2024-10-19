@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: red;
+    width: 80%;
+    margin: 20px auto;
+    height: 200px;
+}
+
+.contenido{
+    display: inline-block;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 180px;
+    width: 15%;
+    text-align: center;
+    padding: 20px 20px 20px 0px;
+}
+
+.contenido:hover{
+    background-color: white;
+}
+
+.contenido-content{
+    display: none;
+    position: absolute;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.contenido:hover .contenido-content{
+    display: block;
+    background-color: white;
+    width: 200px;
+}
+
+#cuerpo{
+    width: 80%;
+    height: 450px;
+    padding-top: 160px;
+    margin: 20px auto;
+    background-color: rgb(150, 150, 19);
+}

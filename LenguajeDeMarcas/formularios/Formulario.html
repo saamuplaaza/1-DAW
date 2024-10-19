@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post" action="destino.html">
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre"/>
+        </p>
+        <p>
+            <label for="provincia">Provincia: </label>
+            <select name="provincia">
+                <option>Córdoba</option>
+                <option>Madrid</option>
+                <option>Málaga</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <textarea cols="10" rows="10">
+                Escribe aquí tu comentario
+            </textarea>
+        </p>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre"/>
+            </p>
+            <p>
+                <label for="provincia">Provincia: </label>
+                <select name="provincia">
+                    <option>Jaén</option>
+                    <option>Córdoba</option>
+                    <option>Sevilla</option>
+                    <option>Huelva</option>
+                    <option>Cádiz</option>
+                    <option>Málaga</option>
+                    <option>Granada</option>
+                    <option>Almería</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <button type="button">Pulsa aquí</button>
+            <button type="reset">Limpiar</button>
+        </p>
+    </form>
+</body>
+</html>

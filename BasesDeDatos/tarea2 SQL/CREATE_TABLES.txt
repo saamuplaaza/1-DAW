@@ -1,0 +1,46 @@
+CREATE TABLE locales(
+cod int primary key not null,
+nombre varchar(30) not null,
+localidad varchar(30) not null
+);
+
+CREATE TABLE clientes(
+cod int primary key not null,
+nombre varchar(30) not null,
+direccion varchar(30) not null,
+localidad varchar(30) not null,
+codlocal int not null references locales (cod)
+);
+
+CREATE TABLE bocadillos(
+cod int primary key not null,
+nombre varchar(30) not null,
+precioventa decimal (5,2) not null
+);
+
+CREATE TABLE ventas(
+cod int not null,
+codbocadillo int not null references bocadillos (cod),
+codcliente int not null references clientes (cod),
+unidades int not null,
+PRIMARY KEY(cod, codbocadillo, codcliente)
+);
+
+CREATE TABLE empleados(
+cod int primary key not null,
+nombre varchar(30) not null,
+salario decimal (7,2) not null,
+codlocal int not null references locales (cod)
+);
+
+CREATE TABLE proveedores(
+cod int primary key not null,
+nombre varchar(30) not null
+);
+
+CREATE TABLE suministra(
+codproveedor int not null references proveedores (cod),
+codbocadillo int not null references bocadillos (cod),
+preciocompra decimal(6,2) not null,
+PRIMARY KEY (codproveedor, codbocadillo)
+);

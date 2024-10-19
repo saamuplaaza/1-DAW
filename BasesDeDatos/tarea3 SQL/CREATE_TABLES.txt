@@ -1,0 +1,26 @@
+CREATE TABLE marcas (
+marca varchar(20) primary key not null,
+pais varchar(20),
+fecha date
+);
+
+CREATE TABLE coche (
+matricula varchar(7) primary key not null,
+marca varchar(20) references marcas(marca),
+modelo varchar(50),
+color varchar(20),
+año year
+);
+
+CREATE TABLE aparcamiento (
+codigo int primary key not null,
+direccion varchar (100),
+telefono int(9)
+);
+
+CREATE TABLE esta (
+codigo int references aparcamiento(codigo),
+matricula varchar(7) references coche(matricula),
+fecha date,
+PRIMARY KEY (codigo, matricula, fecha)
+);

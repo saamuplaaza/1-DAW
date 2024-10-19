@@ -1,0 +1,6 @@
+dni;nombre;apellidos;usuario;contraseña;correo;rol;fechaNacimiento;telefono;avatar
+87654321;Abrahán;Ibáñez Puerma;IPabrahan;4321;abrahan@gmail.com;A;07/05/2004;12345689;no
+12345678;Paula;Plaza;paulita;1234;paula@gmail.com;Admin;15/03/2003;644477905;no
+98765343;Sara;Prieto González;saarapriieto;sara1234;saraprietogonzalez@gmail.com;admin;15/03/2003;620071913;no
+31021118;Samuel;Plaza Sáez;saamuplaaza;262d5b8b33044ede239d434a1f72a025ecbdecfe449f485f753bde52eb1edc2d;samuel@gmail.com;A;29/06/2003;644812930;no
+23462456;Natalia;Carmona;natillasfree;8b0374160a049a2b038668f0f86a06b5315817dc68cca1acb227e844ef4a4556;nata@gmail.com;Admin;;34573567;no

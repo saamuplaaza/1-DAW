@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Proyecto Software" company="" webLink="http://" view-date="2023-11-27" view-index="0" gantt-divider-location="439" resource-divider-location="237" version="3.2.3230" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="242" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="91" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="90" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelLeft" value="taskDates"/>
+        <option id="taskLabelRight" value="resources"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#000200 #ff0000 #660066 #669900 #3333ff #ff00cc #00ffff #ccffcc #ff0033 #00ff33]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="131" order="0"/>
+        <field id="1" name="Función" width="61" order="1"/>
+        <field id="tpc0" name="Perfil" width="41" order="2"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2023" month="11" date="1" type="HOLIDAY"/>
+        <date year="2023" month="12" date="6" type="HOLIDAY"/>
+        <date year="2023" month="12" date="8" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Proyecto desarrollo software" color="#000200" meeting="false" project="true" start="2023-10-16" duration="46" complete="0" thirdDate="2023-10-16" thirdDate-constraint="1" expand="true">
+            <task id="1" name="Fase 1 - Actividades de gestión de proyectos" color="#ffff00" meeting="false" start="2023-10-16" duration="3" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="9" name="Carta del proyecto" color="#ccffff" meeting="false" start="2023-10-16" duration="1" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" name="Plan de gestión de proyectos" color="#99ccff" meeting="false" start="2023-10-17" duration="2" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true"/>
+                <task id="11" name="Actividades de monitoreo/ control" color="#6699ff" meeting="false" start="2023-10-16" duration="3" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="2" name="Fase 2 - Iniciación/Planificación" color="#00ff33" meeting="false" start="2023-10-19" duration="5" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="12" name="Estudio de factibilidad" color="#ffccff" meeting="false" start="2023-10-19" duration="1" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="13" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="13" name="Caso de negocios" color="#ff9999" meeting="false" start="2023-10-20" duration="2" complete="0" thirdDate="2023-10-19" thirdDate-constraint="0" expand="true">
+                    <depend id="14" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="14" name="Planificación de proyectos" color="#ff6666" meeting="false" start="2023-10-24" duration="2" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="3" name="Fase 3 - Análisis de requerimientos" color="#ff0033" meeting="false" start="2023-10-26" duration="4" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="15" name="Recopilación de requisitos" color="#ffff99" meeting="false" start="2023-10-26" duration="2" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true"/>
+                <task id="16" name="Planificación de seguridad" color="#ccff66" meeting="false" start="2023-10-26" duration="4" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="17" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="4" name="Fase 4 - Diseño" color="#00ffff" meeting="false" start="2023-11-02" duration="4" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="17" name="Diseño de alto nivel" color="#cc00cc" meeting="false" start="2023-11-02" duration="1" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="18" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="18" name="Prueba de concepto" color="#ff00ff" meeting="false" start="2023-11-03" duration="1" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="19" name="Diseño detallado" color="#cc00ff" meeting="false" start="2023-11-06" duration="1" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="20" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="20" name="Especificación técnica" color="#9900ff" meeting="false" start="2023-11-07" duration="1" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="5" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="5" name="Fase 5 - Codificación" color="#ff00cc" meeting="false" start="2023-11-08" duration="10" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="Fase 6 - Pruebas" color="#3333ff" meeting="false" start="2023-11-22" duration="4" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="21" name="Prueba del sistema" color="#66ffcc" meeting="false" start="2023-11-22" duration="2" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true"/>
+                <task id="22" name="Prueba de aceptación del usuario" color="#009999" meeting="false" start="2023-11-22" duration="4" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="23" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="7" name="Fase 7 - Implementación" color="#669900" meeting="false" start="2023-11-28" duration="9" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="23" name="Despliegue" color="#999900" meeting="false" start="2023-11-28" duration="2" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" name="Formación" color="#ff9900" meeting="false" start="2023-11-30" duration="4" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" name="Soporte" color="#ff3300" meeting="false" start="2023-12-07" duration="3" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true">
+                    <depend id="26" type="2" difference="0" hardness="Strong"/>
+                    <depend id="27" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="8" name="Fase 8 - Mantenimiento" color="#660066" meeting="false" start="2023-12-13" duration="7" complete="0" thirdDate="2023-10-09" thirdDate-constraint="0" expand="false">
+                <task id="26" name="Actividades de operaciones" color="#006666" meeting="false" start="2023-12-13" duration="3" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true"/>
+                <task id="27" name="Actividades de mantenimiento" color="#0099cc" meeting="false" start="2023-12-13" duration="7" complete="0" thirdDate="2023-10-04" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="Perfil" type="text" default-value=""/>
+        <resource id="0" name="Paco García" function="1" contacts="paco_analista@gmail.com" phone="123456789">
+            <rate name="standard" value="100"/>
+            <custom-property definition-id="tpc0" value="Ingeniero Superior"/>
+        </resource>
+        <resource id="1" name="María López" function="2" contacts="maria_analista_sistemas@gmail.com" phone="789456123">
+            <rate name="standard" value="100"/>
+            <custom-property definition-id="tpc0" value="Ingeniero Superior"/>
+        </resource>
+        <resource id="2" name="Lourdes Fernández" function="3" contacts="lourdes_programadora@gmail.com" phone="159487236">
+            <rate name="standard" value="110"/>
+            <custom-property definition-id="tpc0" value="Técnico de desarrollo"/>
+        </resource>
+        <resource id="3" name="Antonio Gómez" function="4" contacts="antonio_diseño_interfaces@gmail.com" phone="321478569">
+            <rate name="standard" value="105"/>
+            <custom-property definition-id="tpc0" value="Técnico de desarrollo"/>
+        </resource>
+        <resource id="4" name="Miguel Salas" function="5" contacts="miguel_pruebas@gmail.com" phone="111444666">
+            <rate name="standard" value="120"/>
+            <custom-property definition-id="tpc0" value="Técnico de desarrollo"/>
+        </resource>
+        <resource id="5" name="Marta Jiménez" function="6" contacts="marta_junior@gmail.com" phone="333777555">
+            <rate name="standard" value="100"/>
+            <custom-property definition-id="tpc0" value="Ingeniero técnico"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="9" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="3" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="4" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="4" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="5" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="5" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="5" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="5" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="5" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="5" function="6" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="0"/>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="1"/>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="2"/>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="3"/>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="4"/>
+        <vacation start="2023-12-23" end="2024-01-08" resourceid="5"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Analista"/>
+        <role id="2" name="Analista de sistemas"/>
+        <role id="3" name="Programador"/>
+        <role id="4" name="Diseñador de interfaces"/>
+        <role id="5" name="Desarrollador de pruebas"/>
+        <role id="6" name="Programador Junior"/>
+    </roles>
+</project>

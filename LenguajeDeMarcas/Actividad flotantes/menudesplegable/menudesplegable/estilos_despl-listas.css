@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav{
+    display: inline;
+}
+
+.nav li{
+    background-color: darkslategray;
+    color: white;
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.nav >li{
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover{
+    background-color: aquamarine;
+    color: black;
+    float: left;
+}
+
+.nav li:hover >ul{
+    display: block;
+}

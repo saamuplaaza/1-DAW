@@ -1,0 +1,212 @@
+1)
+SELECT count(cod) AS numero_de_ventas
+FROM ventas;
+
+
+2)
+SELECT count(cod) as numero_de_ventas, mes
+FROM ventas
+GROUP BY mes;
+
+
+3)
+SELECT bocadillos.nombre
+FROM bocadillos, ventas
+WHERE ventas.codbocadillo = bocadillos.cod
+GROUP BY bocadillos.nombre
+ORDER BY bocadillos.nombre asc
+;
+
+
+4)
+SELECT bocadillos.nombre, bocadillos.precioventa, suministra.preciocompra
+FROM bocadillos, suministra
+WHERE suministra.codbocadillo = bocadillos.cod
+;
+
+
+5)
+SELECT bocadillos.nombre, bocadillos.precioventa, suministra.preciocompra, (bocadillos.precioventa-suministra.preciocompra)AS beneficio
+FROM bocadillos, suministra
+WHERE suministra.codbocadillo = bocadillos.cod
+;
+
+
+6)
+SELECT locales.nombre, empleados.nombre
+FROM locales, empleados
+WHERE locales.cod = empleados.codlocal
+AND empleados.puesto LIKE "Encargado"
+;
+
+
+7)
+SELECT locales.nombre, empleados.nombre
+FROM locales, empleados
+WHERE locales.cod = empleados.codlocal
+ORDER BY locales.nombre
+;
+
+OTRA FORMA:
+SELECT locales.nombre, count(empleados.nombre)
+FROM locales, empleados
+WHERE locales.cod = empleados.codlocal
+GROUP BY locales.nombre
+;
+
+
+8)
+SELECT nombre
+FROM bocadillos
+WHERE precioventa = (SELECT min(precioventa) FROM bocadillos)
+;
+
+
+9)
+SELECT nombre
+FROM bocadillos
+WHERE precioventa = (SELECT max(precioventa) FROM bocadillos)
+;
+
+
+10)
+SELECT sum(unidades) AS bocadillos_vendidos
+FROM ventas
+;
+
+
+11)
+SELECT ventas.*, (bocadillos.precioventa*ventas.unidades) AS importe_total
+FROM ventas, bocadillos
+WHERE ventas.codbocadillo = bocadillos.cod
+GROUP BY ventas.cod
+;
+
+
+12)
+UPDATE empleados 
+SET salario = 1300.89
+WHERE puesto LIKE "Encargado"
+;
+
+
+13)
+UPDATE empleados 
+SET salario = salario*1.10
+WHERE puesto LIKE "Empleado"
+;
+
+
+14)
+SELECT nombre
+FROM bocadillos
+WHERE bocadillos.cod not in (SELECT ventas.codbocadillo from ventas)
+;
+
+
+15)
+INSERT INTO locales values
+(4, "Local Granada", "Granada")
+;
+
+INSERT INTO empleados values
+(9, "Samuel", 1300.89, 4, "Encargado"),
+(10, "Sara", 880.00, 4, "Empleado"),
+(11, "Irene", 880.00, 4, "Empleado")
+;
+
+
+16)
+SELECT sum(bocadillos.precioventa*ventas.unidades) AS total_ganancias
+FROM  bocadillos, ventas
+WHERE bocadillos.cod = ventas.codbocadillo
+;
+
+
+17)¿Se puede obtener el beneficio total de los bocadillos vendidos, en base a lo que has vendido y lo que has comprado? Justifica la respuesta.
+Sí se puede, la manera de hacerlo sería la siguiente:
+
+SELECT sum(bocadillos.precioventa*ventas.unidades) AS total_ganancias, 
+sum(suministra.preciocompra*ventas.unidades) AS precio_compra_total,
+(sum(bocadillos.precioventa*ventas.unidades)-sum(suministra.preciocompra*ventas.unidades)) AS beneficio
+FROM  bocadillos, ventas, suministra
+WHERE ventas.codbocadillo = bocadillos.cod
+AND suministra.codbocadillo = bocadillos.cod
+;
+
+
+18)
+SELECT nombre
+FROM clientes
+WHERE clientes.cod not in (SELECT ventas.codcliente from ventas)
+;
+
+
+19)
+SELECT sum(unidades) AS bocadillos_vendidos_enero
+FROM ventas 
+WHERE mes LIKE "Enero"
+;
+
+
+20)
+SELECT sum(unidades) AS bocadillos_vendidos, mes
+FROM ventas 
+GROUP BY mes
+;
+
+
+21)
+SELECT sum(unidades) AS bocadillos_vendidos, mes
+FROM ventas 
+GROUP BY mes
+ORDER BY bocadillos_vendidos desc
+LIMIT 1
+;
+
+
+22)
+SELECT locales.nombre, count(empleados.cod) AS numero_empleados 
+FROM locales, empleados
+WHERE locales.cod = empleados.codlocal
+GROUP BY locales.nombre
+;
+
+
+23)
+UPDATE empleados 
+SET salario = 500
+WHERE puesto LIKE "Empleado"
+AND codlocal = (SELECT cod FROM locales WHERE localidad LIKE "Malaga")
+;
+
+
+24)
+UPDATE empleados 
+SET salario = 1000
+WHERE puesto LIKE "Encargado"
+AND codlocal = (SELECT cod FROM locales WHERE localidad LIKE "Malaga")
+;
+
+
+25)
+SELECT avg(salario)
+FROM empleados
+;
+
+
+26)
+SELECT nombre
+FROM empleados
+WHERE salario > (SELECT avg(salario) FROM empleados)
+;
+
+
+27)
+SELECT clientes.nombre, sum(ventas.unidades) as bocatas_vendidos
+FROM clientes, ventas
+WHERE clientes.cod = ventas.codcliente
+GROUP BY codcliente
+ORDER BY bocatas_vendidos desc
+LIMIT 1
+;

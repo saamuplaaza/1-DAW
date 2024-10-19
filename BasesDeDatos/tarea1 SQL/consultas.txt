@@ -1,0 +1,15 @@
+CONSULTAS
+0. Inserta un nuevo campo “nacionalidad” en la tabla persona y actualiza las nacionalidades de las personas utilizando update.
+1. Mostrar todos los datos de las personas.
+2. Mostrar el título de las películas.
+3. Mostrar el título y el año de las películas.
+4. Mostrar los datos de las personas ordenadas por edad de forma descendente.
+5. Mostrar los datos de las personas mayores de 20 años ordenadas de forma ascendente.
+6. Mostrar el nombre y la edad de las personas cuya edad esta comprendida entre 20 y 50 años.
+7. Mostrar las películas que han tenido una recaudación sperior o igual a 2000 € y sean de terror.
+8. Obtener la edad más alta con el nombre de "MAYOR".
+9. Obtener la película que ha recaudado menos, con el nombre de "MENOR".
+10. ¿Cuántas películas son de terror?
+11. ¿Cuánto han recaudado las películas de comedia?.
+12. Obtener los datos de la persona más pequeña.
+13. Muestra el reparto de la película 'Tiburon'.

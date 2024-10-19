@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(161, 0, 0);
+    color: white;
+    width: 79%;
+    padding: 15px;
+}
+
+.desplegable a{
+    color: white;
+    text-decoration: none;
+}
+
+.desplegable {
+    display: inline-block;
+    padding-right: 150px;
+}
+
+.desplegable-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 180px;
+}
+
+.desplegable-content a {
+    display: block;
+    background-color: rgb(253, 74, 74);
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.desplegable:hover .desplegable-content {
+    display: block;   
+}
+
+.desplegable-content a:hover {
+    background-color: rgb(161, 0, 0);
+    color: white;
+}
+
+section.recetas {
+    float: left;
+    padding: 4%;
+    width: 80%;
+}
+  
+.receta {
+    float: left;
+    width: 33%;
+    height: 250px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+  
+.receta img {
+   width: 50%;
+}
+
+aside {
+    text-align: center;
+    color: rgb(253, 74, 74);
+    background-color: rgb(0, 0, 102);
+    border-radius: 20px;
+    width: 20%;
+    margin-right: 10px;
+    position: fixed;
+    left: 79%;
+}
+  
+aside img{
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    clear: left;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 30px;
+}

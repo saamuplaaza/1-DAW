@@ -1,0 +1,67 @@
+0.)
+ALTER TABLE persona ADD nacionalidad varchar(50);
+
+UPDATE persona SET nacionalidad = "Española";
+
+1.)
+SELECT * 
+FROM persona;
+
+2.)
+SELECT titulo 
+FROM pelicula;
+
+3.)
+SELECT titulo, año 
+FROM pelicula;
+
+4.)
+SELECT * FROM persona 
+ORDER BY edad desc;
+
+5.)
+SELECT * FROM persona 
+WHERE edad>20
+ORDER BY edad desc;
+
+6.)
+SELECT nombre, edad 
+FROM persona
+WHERE edad between 20 and 50;
+
+7.)
+SELECT *
+FROM pelicula 
+WHERE recaudacion >=2000 and genero="Terror";
+
+8.)
+SELECT edad as MAYOR
+FROM persona
+WHERE edad = (SELECT max(edad) FROM persona);
+
+9.)
+SELECT titulo as MENOR
+FROM pelicula
+WHERE recaudacion = (SELECT min(recaudacion) FROM pelicula);
+
+10.)
+SELECT count(titulo)
+FROM pelicula 
+WHERE genero = "Terror";
+
+11.)
+SELECT sum(recaudacion)
+FROM pelicula 
+WHERE genero = "Comedia";
+
+12.)
+SELECT *
+FROM persona 
+WHERE edad = (SELECT min(edad) FROM persona);
+
+13.)
+SELECT persona.nombre
+FROM persona, pelicula, interviene
+WHERE interviene.cod_persona = persona.cod_persona 
+and interviene.cod_pelicula = pelicula.cod_pelicula 
+and pelicula.titulo = "Tiburon";

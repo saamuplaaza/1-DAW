@@ -1,0 +1,38 @@
+[
+    {
+        "id": "001",
+        "nombre": "Andrés Márquez",
+        "grupo": "1º DAW",
+        "imagen": "andres.png"
+    },
+    {
+        "id": "002",
+        "nombre": "Luisa de la Rosa",
+        "grupo": "2º SMR",
+        "imagen": "luisa.png"
+    },
+    {
+        "id": "003",
+        "nombre": "Laura Mª Camas",
+        "grupo": "2º SMR",
+        "imagen": "laura.png"
+    },
+    {
+        "id": "004",
+        "nombre": "David Pereira",
+        "grupo": "2º DAW",
+        "imagen": "david.png"
+    },
+    {
+        "id": "005",
+        "nombre": "Oscar Gallardo",
+        "grupo": "1º SMR",
+        "imagen": "oscar.png"
+    },
+    {
+        "id": "006",
+        "nombre": "Julia Merino",
+        "grupo": "1º DAW",
+        "imagen": "julia.png"
+    }
+]

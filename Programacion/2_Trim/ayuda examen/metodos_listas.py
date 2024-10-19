@@ -1,0 +1,27 @@
+print(dir(list))
+lista = ["verde", "rojo", "azul"]
+lista.append("amarillo")
+print(lista)
+lista.extend(["morado", "blanco", "negro"])
+print(lista)
+lista.remove("negro")
+print(lista)
+lista.reverse()
+print(lista)
+print(lista.pop())
+print(lista)
+# lista.clear()
+# print(lista)
+lista2 = lista.copy()
+lista.append("azul")
+print(lista2)
+print(lista)
+print(lista.index("morado"))
+print(lista.count("azul"))
+
+
+# Tuplas
+print(dir(tuple))
+tupla = ("rojo", "verde", "azul", "rojo", "amarillo", "rojo")
+print(tupla.count("rojo"))
+print(tupla.index("azul"))

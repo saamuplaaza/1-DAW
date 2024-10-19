@@ -1,0 +1,40 @@
+SELECT animal.*, cliente.nombre
+FROM animal, cliente
+WHERE animal.id_cliente = cliente.id_cliente
+AND edad = (SELECT max(edad) FROM animal)
+;
+
+SELECT *
+FROM cliente
+WHERE fecha_alta LIKE "2021-01-10"
+AND id_cliente NOT IN (SELECT id_cliente FROM animal)
+;
+
+SELECT visita.fecha, sum(tratamiento.precio) as importe_total
+FROM visita, tratamiento 
+WHERE tratamiento.cod = visita.cod_tratamiento
+GROUP BY visita.fecha
+;
+
+SELECT cliente.nombre as persona, animal.nombre as mascota
+FROM cliente, animal
+WHERE cliente.id_cliente = animal.id_cliente
+AND animal.cod NOT IN (SELECT cod_animal FROM visita) 
+;
+
+SELECT *
+FROM animal
+WHERE edad < (SELECT avg(edad) FROM animal)
+AND tipo_animal != "Gato"
+;
+
+SELECT count(nombre) as Empieza_por_M, nombre
+FROM cliente
+WHERE nombre LIKE "M%" 
+AND direccion != "C/Huelva"
+;
+
+DELETE cliente.*
+FROM cliente
+WHERE nombre LIKE "Manolo"
+;

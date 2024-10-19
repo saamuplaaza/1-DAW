@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    color: #666666;
+    font-family: "Lobster", cursive;
+    margin: 20px auto;
+}
+
+/* El contenedor flex para la primera fila de contenido */
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* El menú */
+nav {
+    width: 10%;
+    padding: 10px;
+}
+
+nav div {
+margin-bottom: 20px;}
+
+/* El elemento principal */
+main {
+    height: 400px;
+    width: 54%;
+    border: 1px solid #666666;
+    border-radius: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+main img {
+    border-radius: 1em;
+    height: 70%;
+    width: 80%;
+}
+
+.content_wrapper article:nth-of-type(1) {
+    height: 400px;
+    border: 1px solid #666666;
+    border-radius: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Artículo. Imágenes pequeñas */
+article {
+    height: 300px;
+    width: 32%;
+    border: 1px solid #666666;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+/*Contendor articles también flex*/
+.articles {
+    margin-left: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+article img {
+    height: 60%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+/* Pie de la página también contenedor flex */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+footer img {
+    width: 50px;
+}

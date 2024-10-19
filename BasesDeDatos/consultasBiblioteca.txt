@@ -1,0 +1,46 @@
+1.)
+SELECT * 
+FROM alumno;
+
+2.)
+SELECT *
+FROM prestamo;
+
+3.)
+SELECT titulo, autor
+FROM libro;
+
+4.)
+SELECT *
+FROM libro
+WHERE titulo LIKE "L*"
+
+5.)
+SELECT libro.*
+FROM libro, prestamo
+WHERE libro.signatura=prestamo.signatura;
+
+6.)
+SELECT libro.titulo, alumno.nomAlu, prestamo.fechaPres
+FROM libro, alumno, prestamo
+WHERE libro.signatura=prestamo.signatura AND alumno.nuMat=prestamo.nuMat;
+
+7.)
+SELECT libro.titulo
+FROM libro, alumno, prestamo
+WHERE libro.signatura=prestamo.signatura AND alumno.nuMat=prestamo.nuMat AND alumno.nomAlu LIKE "RAFAEL";
+
+8.)
+SELECT alumno.nomAlu
+FROM alumno
+WHERE curAlu LIKE "1A";
+
+9.)
+SELECT alumno.nomAlu
+FROM alumno, curso
+WHERE alumno.nuMat=curso.nuMatDel AND curso.codCur LIKE "2*";
+
+10.)
+SELECT libro.titulo
+FROM libro, prestamo
+WHERE libro.signatura=prestamo.signatura AND libro.tema="NAT";

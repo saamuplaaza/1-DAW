@@ -1,0 +1,53 @@
+ALTER TABLE alojamiento 
+ADD precio decimal(9,2)
+;
+
+SELECT nombre 
+FROM cliente 
+WHERE localidad like "Córdoba" or localidad like "Cádiz"
+ORDER BY nombre desc
+;
+
+SELECT nombre 
+FROM cliente 
+WHERE edad like (SELECT min(edad) FROM cliente)
+;
+
+SELECT sum(edad) as Suma, avg(edad) as Media
+FROM cliente
+WHERE profesion like "Estudiante"
+;
+
+UPDATE alojamiento
+SET precio = 30.90
+WHERE localidad like "Cádiz" 
+;
+
+SELECT count(cod), localidad
+FROM alojamiento
+GROUP BY localidad
+;
+
+SELECT *
+FROM cliente
+WHERE edad > (SELECT avg(edad) FROM cliente)
+;
+
+SELECT alojamiento.*
+FROM alojamiento, alquiler
+WHERE fechaAlquiler = "20/08/15"
+AND liberado = "NO"
+AND alojamiento.cod = alquiler.codAlojamiento
+;
+
+SELECT alojamiento.*
+FROM alojamiento, alquiler
+WHERE alojamiento.cod = alquiler.codAlojamiento
+AND alojamiento.localidad like "Cádiz"
+ORDER BY metros asc
+;
+
+SELECT alojamiento.*
+FROM alojamiento
+WHERE alojamiento.cod NOT IN (SELECT codAlojamiento FROM alquiler)
+;

@@ -1,0 +1,23 @@
+CREATE TABLE alojamiento (
+cod int primary key,
+tipo varchar(30) NOT NULL,
+localidad varchar(30) NOT NULL,
+metros decimal(9,2) NOT NULL
+);
+
+CREATE TABLE cliente (
+cod int primary key,
+nombre varchar(20) NOT NULL,
+localidad varchar(30) NOT NULL,
+edad int NOT NULL,
+profesion varchar(20) NOT NULL
+);
+
+CREATE TABLE alquiler (
+codCliente int NOT NULL references cliente(cod),
+codAlojamiento int NOT NULL references alojamiento(cod) ,
+fechaAlquiler date NOT NULL,
+fechaLiberacion date NOT NULL,
+liberado varchar(2) check(liberado like "SI" or liberado like "NO"),
+PRIMARY KEY(codCliente, codAlojamiento, fechaAlquiler)
+);

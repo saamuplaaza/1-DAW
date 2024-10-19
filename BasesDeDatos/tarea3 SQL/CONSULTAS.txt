@@ -1,0 +1,102 @@
+1)
+ALTER TABLE marcas
+ADD importe_cotizacion decimal(9,2)
+;
+
+
+2)
+UPDATE marcas 
+SET importe_cotizacion = 2345.75 WHERE marca LIKE "BMW";
+
+UPDATE marcas 
+SET importe_cotizacion = 4685.5 WHERE marca LIKE "Ford";
+
+UPDATE marcas 
+SET importe_cotizacion = 9984.53 WHERE marca LIKE "Nissan";
+
+UPDATE marcas 
+SET importe_cotizacion = 8934.98 WHERE marca LIKE "Peugeot";
+
+UPDATE marcas 
+SET importe_cotizacion = 5634.62 WHERE marca LIKE "Seat";
+
+
+3)
+SELECT *
+FROM coche
+WHERE color LIKE "gris"
+;
+
+
+4)
+SELECT *
+FROM coche
+WHERE color LIKE "gris"
+AND año > 2010
+;
+
+
+5)
+SELECT marca
+FROM marcas
+WHERE pais LIKE "España"
+;
+
+
+6)
+SELECT coche.*
+FROM coche, marcas
+WHERE marcas.marca = coche.marca
+AND marcas.pais LIKE "España"
+;
+
+
+7)
+SELECT color
+FROM coche
+GROUP BY color
+;
+
+
+8)
+SELECT count(codigo)*10 as total_ganado
+FROM esta
+;
+
+
+9)
+SELECT count(esta.codigo)*10 as total_gastado
+FROM esta, coche
+WHERE esta.matricula = coche.matricula 
+AND coche.marca LIKE "Nissan"
+AND coche.modelo LIKE "X-Trail"
+;
+
+
+10)
+SELECT coche.*
+FROM coche
+WHERE coche.matricula NOT IN (SELECT matricula FROM esta)
+;
+
+
+11)
+SELECT direccion
+FROM aparcamiento, esta
+WHERE esta.codigo = aparcamiento.codigo
+AND esta.matricula = (SELECT matricula FROM coche WHERE marca LIKE "Nissan" AND modelo LIKE "X-Trail")
+AND fecha LIKE "2022-01-01"
+;
+
+
+12)
+SELECT count(codigo) as num_aparcamientos
+FROM aparcamiento
+;
+
+
+13)
+SELECT direccion 
+FROM aparcamiento
+WHERE codigo NOT IN (SELECT codigo FROM esta)
+;

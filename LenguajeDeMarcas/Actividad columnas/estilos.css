@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.threecolumn {
+    border: 1px solid black;
+    margin: 20px auto;
+    column-count: 3;
+    width: 60%;
+}
+
+.border {
+    height: 400px; /* Si no lo pongo no funciona el breack-inside*/
+    column-rule: 5px solid red;
+    column-gap: 20px;
+}
+
+.span{
+    margin: 20px auto;
+    column-span: all;
+}
+
+.border p {
+    break-inside: avoid;
+}
+
+img{
+    width: 100%;
+}

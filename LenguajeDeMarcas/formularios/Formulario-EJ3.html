@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-EJ3</title>
+</head>
+<body>
+    <form method="post" action="samplasae29@iesfidiana.es">
+        <p><h1 style="text-align: center; background-color: gainsboro;"><b>HOJA DE INSCRIPCIÓN<br>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</b></h1></p>
+        <fieldset style="background-color: gainsboro;">
+            <legend style="background-color: white;">Datos personales<a href="#datos">(*)</a></legend>
+                <table>
+                    <tr>
+                        <td style="width: 50%;" for="apeliidos">Apellidos:</br>
+                        <input style="width: 98%;" type="text" name="apeliidos">
+                        </td>
+                        <td for="nombre">Nombre:</br>
+                            <input type="text" name="nombre">
+                        </td>
+                        <td for="dni">DNI:</br>
+                            <input type="text" name="DNI">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;" for="nacimiento">Nacido/a en: </br>
+                        <input style="width: 80%;" type="text" name="nacimiento">
+                        </td>
+                        <td for="provincia">Provincia:</br>
+                            <select name="provincia">
+                                <option>Jaén</option>
+                                <option>Córdoba</option>
+                                <option>Sevilla</option>
+                                <option>Huelva</option>
+                                <option>Cádiz</option>
+                                <option>Málaga</option>
+                                <option>Granada</option>
+                                <option>Almería</option>
+                        </td>
+                        <td for="fecha">Fecha nacimiento (dd/mm/aaaa):</br>
+                            <input type="date" name="DNI">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;" for="domicilio">Domicilio (Calle, plaza y número): </br>
+                        <input style="width: 90%;" type="text" name="domicilio">
+                        </td>
+                        <td for="codpostal">Código postal:</br>
+                            <input style="width: 50%;" type="number" name="codpostal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;" for="localidad">Localidad: </br>
+                        <input style="width: 80%;" type="text" name="localidad">
+                        </td>
+                        <td for="provincia">Provincia:</br>
+                            <select name="provincia">
+                                <option>Jaén</option>
+                                <option>Córdoba</option>
+                                <option>Sevilla</option>
+                                <option>Huelva</option>
+                                <option>Cádiz</option>
+                                <option>Málaga</option>
+                                <option>Granada</option>
+                                <option>Almería</option>
+                        </td>
+                        <td for="telf">Teléfono:</br>
+                            <input type="tel" name="telf">
+                        </td>
+                    </tr>
+                </table>
+        </fieldset><br>
+        <fieldset style="background-color: lemonchiffon;">
+            <legend style="background-color: white;">Requisitos de acceso</legend>
+                <dl>
+                    <label for="requisitos"></label>
+                    <dt><input style="vertical-align: sub;" type="radio" name="requisitos" value="directo">Directo</dt>
+                    <dd><input style="vertical-align: sub;" type="radio" name="directo" value="bachLOGSE">Bachillerato LOGSE. Modalidad: <input type="text" name="directo"></dd>
+                    <dd><input style="vertical-align: sub;" type="radio" name="directo" value="bachLOGSE">Bachillerato experimental </dd>
+                    <dd><input style="vertical-align: sub;" type="radio" name="directo" value="bachLOGSE">COU. Opción: <input type="text" name="directo"></dd>
+                    <dd><input style="vertical-align: sub;" type="radio" name="directo" value="bachLOGSE">FP2 
+                    <dd><input style="vertical-align: sub;" type="radio" name="directo" value="bachLOGSE">Otros (Especifique): <input type="text" name="directo"></dd>
+                    <dt><input type="radio" name="requisitos" value="prueba">Mediante prueba</dt>
+                </dl>
+        </fieldset><br>
+        <fieldset style="background-color: rgba(0, 191, 255, 0.587);">
+            <legend style="background-color: white;">Solicitud</legend>
+                <p>El/La que se suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado superior:</p>
+                <label for="ciclo">Ciclo formativo:</label>
+                <select name="ciclo">
+                    <option>Sistemas Informáticos y Redes</option>
+                    <option>Desarrollo de Aplicaciones Informáticas</option>
+                </select>
+                <p>En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:</p>
+                <table>
+                    <tr>
+                        <td style="width: 50%;" for="ciclosform"><b>Ciclos formativos</b><br>
+                        <input style="width: 98%;" type="text" name="ciclosform"><br>
+                        <input style="width: 98%;" type="text" name="ciclosform">
+                        </td>
+                        <td for="centros"><b>Centros</b></br>
+                            <input type="text" name="centros"><br>
+                            <input type="text" name="centros">
+                        </td>
+                        <td for="localidad"><b>Localidad</b></br>
+                            <input type="text" name="localidad"><br>
+                            <input type="text" name="localidad">
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <label for="modalidad">Modalidad de horario especial (marque):</label>
+                    <input type="checkbox" name="modalidad" value="modhorario"/>
+                </p>
+        </fieldset><br>
+        <fieldset style="background-color: pink;">
+            <legend style="background-color: white;">Documentación presentada</legend>
+            <table>
+                <tr>
+                    <td><label for="fotodni"></label></td>
+                    <input type="checkbox" name="fotodni" value="fotodni"/>Fotocopia DNI
+                    <td><label for="certif"></label></td>
+                    <input type="checkbox" name="certif" value="certif"/>Certificado académico
+                </tr>
+            </table>
+            <label for="documento"></label>
+            <input type="radio" name="documento" value="documentos">Otros documentos (especifique):<input type="text" name="documento">
+        </fieldset><br>
+        <fieldset style="background-color: rgba(255, 185, 159, 0.509);">
+            <legend style="background-color: white;">Comunicación</legend>
+                <p>De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13 de enero, se informa que:</p>
+                <ul style="list-style: disc;">
+                    <li>El plazo máximo para resolver la presente solicitud es de 3 meses desde la fecha en que haya tenido entrada en el registro del órgano competente para la tramitación, sin perjuicio de lo previsto en el artículo 42.5 de la misma ley.</li>
+                    <li>El efecto que producirá el silencio administrativo si transcurre el plazo sin que se haya dictado y notificado la resolución correspondiente, es desestimatorio de la solicitud.</li>
+                </ul>
+                <p>
+                    <label for="diasem"></label>
+                    <input style="width: 18%;" type="text" name="diasem" placeholder="Día de la semana">
+                    <label for="dia">,</label>
+                    <input style="width: 6%;" type="number" name="dia" placeholder="dia">
+                    <label for="mes">de</label>
+                    <input style="width: 16%;" type="text" name="mes" placeholder="mes">
+                    <label for="anio">de</label>
+                        <select name="anio">
+                            <option value="2006">2006</option>
+                            <option value="2006">2007</option>
+                            <option value="2006">2008</option>
+                            <option value="2006">2009</option>
+                            <option value="2006">2010</option>
+                            <option value="2006">2011</option>
+                            <option value="2006">2012</option>
+                            <option value="2006">2013</option>
+                            <option value="2006">2014</option>
+                            <option value="2006">2015</option>
+                            <option value="2006">2016</option>
+                        </select>
+                </p>
+                <table>
+                    <tr style="width: 100%; vertical-align: top;">
+                        <td style="width: 90%;">La persona solicitante,</td>
+                        <td><textarea cols="20" rows="10" placeholder="Registro de entrada"></textarea></td>
+                    </tr>
+                </table>
+                <p>Firma</p>
+        </fieldset><br>
+        <fieldset style="border-style: dashed; border-color: black;">
+            <section style="font-size: smaller;" id="datos">        
+                (*)Los datos personales contenidos en este impreso podrán ser incluidos en un fichero para su tratamiento por la Consellería de Cultura y Educación, en el uso de las funciones propias que tiene atribuidas en el ámbito de sus competencias, pudiendo dirigirse a cualquier órgano de la misma para ejercitar los derechos de acceso, rectificación, cancelación y oposición, según lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (BOE núm 298, de 14 de diembre de 1999).
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+CONSULTAS
+1. Añadir campo "Importecotizacion" en tabla de Marcas.
+2. Insertar el importe de cotización de las acciones de cada marca.
+3. Muestra los coches de color gris.
+4. Muestra los coches de color gris, posteriores a 2010.
+5. Muestra las marcas nacionales.
+6. Muestra los datos de los coches nacionales.
+7. Muestra los colores de los coches pero sin repetición.
+8. Si cada aparcamiento son 10 € ¿cuanto se ha ganado en total?.
+9. Cuanto se ha gastado en aparcamientos el Nissan X-Trail.
+10. Muestra los coches que no han aparcado nunca.
+11. Muestra donde estuvo aparcado el Nissan X-Trail el 1-01-2022.
+12. ¿Cuántos aparcamientos hay?.
+13. Muestra los aparcamientos que no han tenido veniculos.

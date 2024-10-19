@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.analysis.completeFunctionParens": true,
+		"python.analysis.autoFormatStrings": true,
+		"python.analysis.enableSyncServer": true,
+		"python.analysis.inlayHints.callArgumentNames": "off",
+		"python.analysis.autoImportCompletions": true
+	}
+}

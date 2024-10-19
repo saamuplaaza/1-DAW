@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: blue;
+    margin: 20px auto;
+    height: 400px;
+    padding: 20px;
+    /*width: 800px;*/ /*fijo*/
+    /*width: 60em;*/ /*elastico*/
+    width: 80%; /*fluido*/
+    
+}
+
+p{
+    background-color: green;
+    height: 340px;
+    margin-top: 20px;
+    /*width: 350px;*/ /*fijo*/
+    /*width: 25em;*/ /*elastico*/
+    width: 45%; /*fluido*/
+}
+
+p:nth-child(1){
+    float:left
+}
+p:nth-child(2){
+    float: right;
+}

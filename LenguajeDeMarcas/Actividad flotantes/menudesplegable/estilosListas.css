@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav li{
+    background-color: rgb(97, 95, 95);
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav > li{
+    width: 200px;
+    display: block;
+    border-bottom: 2px solid white;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+
+}
+
+.sub li {
+    background-color: gray;
+}
+
+.enlaces li {
+    background-color: dodgerblue;
+}
+
+.nav li a {
+    color: white;
+    float: left;
+    width: 200px;
+}
+
+.nav li:hover{
+    background-color: orange;
+    color: white;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style>
+        table {
+        border-collapse: collapse;
+        }
+
+        td,
+        th {
+        border: 1px solid rgb(219, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col style="background-color: red;">
+            <col span="2" style="background-color: yellow;">
+        </colgroup>
+        <caption>DATOS</caption>
+        <thead>
+            <tr>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11111111A</td>
+                <td>Ana</td>
+                <td>López Castilla</td>
+            </tr>
+            <tr>
+                <td>22222222B</td>
+                <td>Iván</td>
+                <td>Plaza Mesut</td>
+            </tr>
+            <tr>
+                <td>33333333C</td>
+                <td>Laura</td>
+                <td>Sánchez Carmona</td>
+            </tr>
+            <tr>
+                <td colspan="3">Más info en la web</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

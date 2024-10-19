@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+  display: block;
+}
+
+div.inline {
+  border: 1px solid black;
+}
+
+div.inline p {
+  background-color: yellow;
+  border: 1px solid black;
+  /*display: inline;*/
+  /*display: inline-block;*/
+  /*display: none;*/
+  height: 200px;
+  width: 100px;
+}
+
+p {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.tabla {
+  display: table;
+}
+
+.fila {
+  display: table-row;
+}
+
+.celda {
+  border: 1px solid black;
+  display: table-cell;
+}

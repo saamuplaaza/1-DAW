@@ -1,0 +1,27 @@
+INSERT INTO persona values
+(1,"Robert de Niro",58,"Actor"),
+(2,"Amaya Salamanda",25,"Actriz"),
+(3,"Tarantino",47,"Director"),
+(4,"La terremoto",18,"Actriz"),
+(5,"Spilberg",68,"Director")
+;
+
+
+INSERT INTO pelicula values
+(1,"Tiburon",1986,"Terror",2554),
+(2,"Tiburon2",1996,"Terror",2000),
+(3,"Abierto hasta el Amanecer",2000,"Terror",1522),
+(4,"Señor dame Paciencia",2005,"Comedia",450),
+(5,"Una jaula de grillos",2004,"Comedia",1000)
+;
+
+
+INSERT INTO interviene values
+(1,1),
+(3,3),
+(2,1),
+(4,1),
+(5,1),
+(4,3),
+(5,2)
+;

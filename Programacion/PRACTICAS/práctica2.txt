@@ -1,0 +1,13 @@
+Realiza un programa en python el cual tiene que realizar una serie de operaciones con cadenas:
+
+- El programa debe contener un menú con opciones que se muestre al principio y después de cada operación. Debe permitir elegir cada opción con un número (1, 2, 3...) Para salir de la aplicación debemos pulsar la opción 0 en el menú principal. Hay que usar un bucle infinito hasta que pulsemos 0.
+
+- La opción 1 es Encontrar palabras de un texto, para ello debes hacer una función que reciba un texto en un fichero .txt y una palabra. El programa te debe devolver el número de ocurrencias de dicha palabra en el texto, sin tener en cuenta (tildes, mayúsculas o minúsculas)
+
+- La opción 2 es Conteo de palabras, para ello debes hacer una función que le pasas un texto en un fichero .txt y debe contar cuántas palabras tiene. Además debe de saber la longitud en caracteres y cuántas líneas tiene.
+
+- La opción 3 es Cambiar a vocal, para ello debes hacer una función que reciba una palabra y le cambie todas las vocales por la vocal dada. 
+
+- La opción 4 es Palíndromo, para ello debes hacer una función que reciba una palabra y te diga si es o no un palíndromo, independientemente de las mayúsculas o minúsculas que tenga.
+
+Se valorará la funcionalidad del código, el orden del mismo, los comentarios y la originalidad del código(código copiado de Internet o de compañeros suponen un 0 en la parte práctica de la asignatura sin derecho a examen).

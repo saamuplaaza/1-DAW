@@ -1,0 +1,41 @@
+INSERT INTO atleta(dni, nombre, tipo, ranking) values
+("11111111A", "Samuel", "ciclista", 1),
+("22222222B", "Abrahan", "ciclista", 2)
+;
+
+
+INSERT INTO atleta(dni, nombre, tipo, puesto) values
+("33333333C", "Álvaro", "corredor", 1),
+("44444444D", "Jonipeo", "corredor", 2),
+("55555555E", "MrFrenillo", "corredor", 3)
+;
+
+
+INSERT INTO competicion values
+(1, "tour", 2023),
+(2, "giro", 2023),
+(3, "grand prix", 2024),
+(4, "campeonato españa", 2021),
+(5, "universal", 2024)
+;
+
+
+INSERT INTO etapa values
+(1, "La Fuensanta", 4, 2),
+(2, "Mirabueno", 15, 5),
+(3, "Cerro Muriano", 12, 1),
+(4, "Santa Rosa", 7, 3),
+(5, "Ciudad Jardín", 9, 4)
+;
+
+
+INSERT INTO participa values
+("11111111A", 4, 21),
+("33333333C", 4, 33),
+("22222222B", 1, 27),
+("55555555E", 3, 13),
+("11111111A", 2, 5),
+("44444444D", 5, 7),
+("22222222B", 3, 2),
+("55555555E", 1, 24)
+;

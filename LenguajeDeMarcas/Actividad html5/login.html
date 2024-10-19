@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <p><img src="C:\Users\Samuel\OneDrive\Escritorio\Samuel\1º DAW\Lenguaje de marcas\Actividad html5\multimedia\multimedia\titulo1.png"></p>
+    <form method="post" action="index.html">
+        <p>
+            <label for="nombre"></label>
+            <input style="width: 20%;" type="text" name="nombre" placeholder="Nombre de usuario">
+        </p>
+        <p>
+            <label for="password"></label>
+            <input style="width: 20%;" type="password" name="password" placeholder="contraseña">
+        </p>
+        <p>
+            <label for="recordar"></label>
+            <input type="checkbox" name="recordar" value="recordar">Recordar nombre de usuario
+        </p>
+        <p>
+            <button type="submit"><a href="index.html">Acceder</a></button>
+        </p>
+        <p>Si aún no está registrado, rellene el siguiente formulario de registro:</p>
+        <fieldset>
+            <legend>Crear usuario de acceso</legend>
+            <p>
+                <label for="usuario">Nombre de usuario </label>
+                <input type="text" name="usuario">
+            </p>
+            <p>
+                <label for="contraseña">Contraseña </label>
+                <input type="password" name="contraseña">
+            </p>
+            <table>
+                <tr>
+                    <td for="nombre">Nombre
+                    <input type="text" name="nombre">
+                    </td>
+                    <td for="apellidos">Apellido(s)
+                    <input type="text" name="apeliidos">
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <label for="correo">Correo electrónico </label>
+                <input type="email" name="correo">
+            </p>
+            <label for="provincia">Provincia>
+                <select name="provincia">
+                    <option>Almería</option>
+                    <option>Cádiz</option>
+                    <option>Córdoba</option>
+                    <option>Granada</option>
+                    <option>Huelva</option>
+                    <option>Jaén</option>
+                    <option>Málaga</option>
+                    <option>Sevilla</option>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

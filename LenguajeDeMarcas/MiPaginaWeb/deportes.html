@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="deportes, francia, futbol, balonmano, tenis, natacion, juegos olimpicos">
+    <link rel="stylesheet" href="css/estilo_deportes.css">
+    <title>Deportes Francia</title>
+</head>
+<script src="https://kit.fontawesome.com/bc3d071d52.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<body>
+    <section id="inicio"></section>
+    <div class="menu">     
+        <nav>
+            <div class="icon"><i class="fa-solid fa-bars"></i></div>
+            <ul class="menu_item">
+                <li>Fútbol</li>
+                <li>Balonmano</li>
+                <li>Baloncesto</li>
+                <li>Natación</li>
+                <li>Tenis</li>
+                <li>Golf</li>
+            </ul>
+        </nav>
+        <div class="clase_inicio">
+            <p><a href="#inicio">Inicio</a></p>
+        </div>
+        <div class="deportes">
+            <p>DEPORTES</p>
+            <img class="flat" src="imagenes/icono_bandera.jpg" alt="icono">
+        </div>
+    </div>
+    <div class="videoJJOO" > <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8397s8?autoplay=1" width="100%" height="100%" allowfullscreen title="Dailymotion Video Player" allow="autoplay"> </iframe></div>
+    <div class="noticias">
+        <div class="noticia">
+            <h2><a href="https://www.transatjacquesvabre.org/">The Amundi Evian Championship</a></h2>
+            <img src="imagenes/deportes/Golf.jpg">
+            <h6>© The Amundi Evian Championship  —  Un torneo que se juega en Evian-les-Bains, en la región de Auvernia-Ródano-Alpes.</h6>
+            <p>Del 27 al 30 de julio de 2023</p>
+        </div>
+        <div class="noticia">
+            <h2><a href="https://www.schneiderelectricparismarathon.com/fr">Maratón de París</a></h2>
+            <img src="imagenes/deportes/maraton.jpg">
+            <h6>© snaptitude / Adobe Stock  —  El Maratón de París por la orilla del Sena, con la vista puesta en la Tour Eiffel.</h6>
+            <p>Del 27 al 30 de julio de 2023</p>
+        </div>
+        <div class="noticia">
+            <h2><a href="https://www.francegalop-live.com/fr/prixdediane">Premio Diane Longines, en París</a></h2>
+            <img src="imagenes/deportes/hipodromo.jpg">
+            <h6>© Scoopdyga  —  Premio de Diane Longines, en el hipódromo de Chantilly.</h6>
+            <p>Junio 2024</p>
+        </div>
+    </div>
+    <footer>
+        <button><a href="index.html">Página principal</a></button>
+        <div class="footer1">
+            <div class="elementfoot">
+                <h3>SERVICIOS</h3>
+                <p><a href="">Ciudades</a></p>
+                <p><a href="">Monumentos</a></p>
+                <p><a href="">Gastronomía</a></p>
+                <p><a href="">Historia</a></p>
+            </div>
+            <div class="elementfoot">
+                <h3>SERVICIO AL CLIENTE</h3>
+                <p><a href="">Contáctanos</a></p>
+                <p><a href="">FAQ</a></p>
+            </div>
+        </div>
+        <div class="elementfoot">
+            <h3>TEXTOS LEGALES</h3>
+            <p><a href="">Aviso legal|</a></p>
+            <p><a href="">Política de privacidad|</a></p>
+            <p><a href="">Política de cookies|</a></p>
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Deportes Francia</span> by <span property="cc:attributionName">Samuel Plaza Sáez</span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+        </div>
+    </footer>
+    <div class="flecha_inicio">
+        <a href="#inicio"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <script>
+        $(function() {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function() {
+            $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            });
+        });
+    </script>
+</body>
+</html>

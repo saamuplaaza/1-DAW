@@ -1,0 +1,23 @@
+[
+    {
+        "id" : "001",
+        "nombre" : "Samuel",
+        "apellidos" : "Plaza Sáez",
+        "puesto" : "Programador Junior",
+        "correo" : "samuelplazasaez@gmail.com"
+    },
+    {
+        "id" : "002",
+        "nombre" : "Paula",
+        "apellidos" : "Plaza Sáez",
+        "puesto" : "Profesora de Pilates",
+        "correo" : "paulaplazasaez@gmail.com"
+    },
+    {
+        "id" : "002",
+        "nombre" : "Irene",
+        "apellidos" : "Salinas Linares",
+        "puesto" : "Entrenadora de Tenis",
+        "correo" : "irenesalinaslinares@gmail.com"
+    }
+]

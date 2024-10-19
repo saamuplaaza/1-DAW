@@ -1,0 +1,30 @@
+CREATE TABLE libro (
+signatura INT PRIMARY KEY,
+titulo varchar(100),
+autor varchar(80),
+editorial varchar(50),
+tema varchar(10)
+);
+
+
+CREATE TABLE curso (
+codCur varchar(2) PRIMARY KEY,
+etapa varchar(20)
+);
+
+
+CREATE TABLE alumno (
+nuMat INT PRIMARY KEY,
+nomAlu varchar(20),
+dirAlu varchar(30),
+edad INT,
+CurAlu varchar(2) REFERENCES curso (codCur)
+);
+
+
+CREATE TABLE prestamo (
+signatura INT REFERENCES libro (signatura),
+nuMat INT REFERENCES alumno (nuMat),
+fechaPres DATE,
+PRIMARY KEY (signatura, nuMat)
+);

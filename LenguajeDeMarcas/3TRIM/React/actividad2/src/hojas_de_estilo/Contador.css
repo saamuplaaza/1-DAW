@@ -1,0 +1,12 @@
+.contador {
+    min-width: 300px; /*Para que se amplíe automáaticamente si el número es mayor de 99*/
+    height: 300px;
+    font-size: 160px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid white;
+    margin-bottom: 15px;
+}

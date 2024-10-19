@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-EJ1</title>
+</head>
+<body>
+    <form method="post" action="samplasae29@iesfidiana.es">
+        <h1>Información sobre el producto</h1>
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Inserte nombre del producto"/>
+            </p>
+            <br>
+                <label for="descripcion">Descripción</label></br>
+                <textarea cols="70" rows="10" placeholder="Escriba un comentario"></textarea>
+            </p>
+            <p>
+                <label for="foto">Foto </label>
+                <input type="file" name="foto">
+            </p>
+            <p>
+                <label for="contador"></label>
+                <input type="checkbox" name="contador" value="visitas"/>Añadir contador de visitas
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <table style="width: 50%;">
+                <tr>
+                    <td for="precio">Precio:
+                    <input type="number" name="precio">€
+                    </td>
+                    <td for="impuestos">Impuestos
+                    <select name="impuestos">
+                        <option>4%</option>
+                        <option>7%</option>
+                        <option>16%</option>
+                        <option>25%</option>
+                    </td>
+                </tr>
+            </table>
+            <label for="promocion">Promoción</label> </br>
+            <input type="radio" name="promocion" value="ninguno" checked>Ninguno </br>
+            <input type="radio" name="promocion" value="transporte">Transporte gratuito </br>
+            <input type="radio" name="promocion" value="descuento">Descuento 5% </br>
+        </fieldset>
+    </form>    
+</body>
+</html>

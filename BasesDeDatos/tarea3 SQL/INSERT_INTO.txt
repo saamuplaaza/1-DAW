@@ -1,0 +1,35 @@
+INSERT INTO marcas values
+("Nissan", "Japón", "1933-12-16"),
+("Ford", "EEUU", "1903-06-16"),
+("Peugeot", "Francia", "1896-04-02"),
+("Seat", "España", "1950-05-09"),
+("BMW", "Alemania", "1916-03-07")
+;
+
+
+INSERT INTO coche values
+("1111AAA", "Nissan", "X-Trail", "gris", 2019),
+("2222BBB", "Ford", "Focus", "gris", 2003),
+("3333CCC", "Peugeot", "206", "azul", 2001),
+("4444DDD", "Ford", "Mustang", "negro", 2020),
+("5555EEE", "Seat", "Leon", "negro", 2009)
+;
+
+
+INSERT INTO aparcamiento values
+(1, "Avn. Almogavare", 111111111),
+(2, "Conde Vallellano", 222222222),
+(3, "ErosKy", 333333333),
+(4, "Explanado-Feria", 444444444),
+(5, "Gran Vía", 555555555)
+;
+
+
+INSERT INTO esta values
+(1, "1111AAA", "2022-01-01"),
+(1, "1111AAA", "2022-01-02"),
+(2, "2222BBB", "2022-01-03"),
+(3, "1111AAA", "2022-01-04"),
+(3, "3333CCC", "2022-01-04"),
+(2, "1111AAA", "2022-01-03")
+;

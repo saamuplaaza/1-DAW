@@ -1,0 +1,30 @@
+CREATE TABLE cliente(
+id_cliente int auto_increment PRIMARY KEY,
+nombre varchar(50),
+direccion varchar(100),
+fecha_alta date
+);
+
+CREATE TABLE animal (
+cod int auto_increment PRIMARY KEY,
+nombre varchar(50),
+tipo_animal varchar(30),
+descripcion varchar(70),
+edad int,
+id_cliente int references cliente(id_cliente)
+);
+
+CREATE TABLE tratamiento (
+cod int auto_increment PRIMARY KEY,
+nombre varchar(50),
+decripcion varchar(50),
+precio decimal(9,2)
+);
+
+CREATE TABLE visita (
+cod_animal int references animal(cod),
+cod_tratamiento int references tratmiento(cod),
+fecha date,
+pagado varchar(2) NOT NULL check(pagado LIKE "SI" or pagado LIKE "NO"),
+PRIMARY KEY (cod_animal, cod_tratamiento, fecha)
+);
